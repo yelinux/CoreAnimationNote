@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		817413CD2646342C00DE6F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413CC2646342C00DE6F91 /* AppDelegate.m */; };
-		817413D02646342C00DE6F91 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413CF2646342C00DE6F91 /* SceneDelegate.m */; };
-		817413D32646342C00DE6F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413D22646342C00DE6F91 /* ViewController.m */; };
-		817413D62646342C00DE6F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817413D42646342C00DE6F91 /* Main.storyboard */; };
 		817413D82646342E00DE6F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817413D72646342E00DE6F91 /* Assets.xcassets */; };
 		817413DB2646342E00DE6F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817413D92646342E00DE6F91 /* LaunchScreen.storyboard */; };
 		817413DE2646342E00DE6F91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413DD2646342E00DE6F91 /* main.m */; };
 		817413E82646342F00DE6F91 /* CoreAnimationNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413E72646342F00DE6F91 /* CoreAnimationNoteTests.m */; };
 		817413F32646342F00DE6F91 /* CoreAnimationNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413F22646342F00DE6F91 /* CoreAnimationNoteUITests.m */; };
+		81741403264634F400DE6F91 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81741401264634F400DE6F91 /* ExampleViewController.m */; };
+		81741404264634F400DE6F91 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81741402264634F400DE6F91 /* ExampleViewController.xib */; };
+		8174140B2646370900DE6F91 /* CABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817414092646370900DE6F91 /* CABasicAnimationViewController.m */; };
+		8174140C2646370900DE6F91 /* CABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8174140A2646370900DE6F91 /* CABasicAnimationViewController.xib */; };
+		8174140F26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8174140E26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.m */; };
+		8174141226465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8174141126465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.m */; };
+		817414152646619700DE6F91 /* CAGroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817414142646619700DE6F91 /* CAGroupAnimationViewController.m */; };
+		81741418264667DB00DE6F91 /* CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81741417264667DB00DE6F91 /* CATransitionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +44,6 @@
 		817413C82646342C00DE6F91 /* CoreAnimationNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817413CB2646342C00DE6F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817413CC2646342C00DE6F91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		817413CE2646342C00DE6F91 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		817413CF2646342C00DE6F91 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		817413D12646342C00DE6F91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		817413D22646342C00DE6F91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		817413D52646342C00DE6F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		817413D72646342E00DE6F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817413DA2646342E00DE6F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817413DC2646342E00DE6F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,20 @@
 		817413EE2646342F00DE6F91 /* CoreAnimationNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		817413F22646342F00DE6F91 /* CoreAnimationNoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationNoteUITests.m; sourceTree = "<group>"; };
 		817413F42646342F00DE6F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81741400264634F400DE6F91 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		81741401264634F400DE6F91 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		81741402264634F400DE6F91 /* ExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
+		817414082646370900DE6F91 /* CABasicAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationViewController.h; sourceTree = "<group>"; };
+		817414092646370900DE6F91 /* CABasicAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationViewController.m; sourceTree = "<group>"; };
+		8174140A2646370900DE6F91 /* CABasicAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CABasicAnimationViewController.xib; sourceTree = "<group>"; };
+		8174140D26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimation1ViewController.h; sourceTree = "<group>"; };
+		8174140E26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimation1ViewController.m; sourceTree = "<group>"; };
+		8174141026465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimation2ViewController.h; sourceTree = "<group>"; };
+		8174141126465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimation2ViewController.m; sourceTree = "<group>"; };
+		817414132646619700DE6F91 /* CAGroupAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAGroupAnimationViewController.h; sourceTree = "<group>"; };
+		817414142646619700DE6F91 /* CAGroupAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGroupAnimationViewController.m; sourceTree = "<group>"; };
+		81741416264667DB00DE6F91 /* CATransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransitionViewController.h; sourceTree = "<group>"; };
+		81741417264667DB00DE6F91 /* CATransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransitionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +118,16 @@
 		817413CA2646342C00DE6F91 /* CoreAnimationNote */ = {
 			isa = PBXGroup;
 			children = (
+				817414072646369400DE6F91 /* Example */,
 				817413CB2646342C00DE6F91 /* AppDelegate.h */,
 				817413CC2646342C00DE6F91 /* AppDelegate.m */,
-				817413CE2646342C00DE6F91 /* SceneDelegate.h */,
-				817413CF2646342C00DE6F91 /* SceneDelegate.m */,
-				817413D12646342C00DE6F91 /* ViewController.h */,
-				817413D22646342C00DE6F91 /* ViewController.m */,
-				817413D42646342C00DE6F91 /* Main.storyboard */,
 				817413D72646342E00DE6F91 /* Assets.xcassets */,
 				817413D92646342E00DE6F91 /* LaunchScreen.storyboard */,
 				817413DC2646342E00DE6F91 /* Info.plist */,
 				817413DD2646342E00DE6F91 /* main.m */,
+				81741400264634F400DE6F91 /* ExampleViewController.h */,
+				81741401264634F400DE6F91 /* ExampleViewController.m */,
+				81741402264634F400DE6F91 /* ExampleViewController.xib */,
 			);
 			path = CoreAnimationNote;
 			sourceTree = "<group>";
@@ -135,6 +148,24 @@
 				817413F42646342F00DE6F91 /* Info.plist */,
 			);
 			path = CoreAnimationNoteUITests;
+			sourceTree = "<group>";
+		};
+		817414072646369400DE6F91 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				817414082646370900DE6F91 /* CABasicAnimationViewController.h */,
+				817414092646370900DE6F91 /* CABasicAnimationViewController.m */,
+				8174140A2646370900DE6F91 /* CABasicAnimationViewController.xib */,
+				8174140D26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.h */,
+				8174140E26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.m */,
+				8174141026465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.h */,
+				8174141126465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.m */,
+				817414132646619700DE6F91 /* CAGroupAnimationViewController.h */,
+				817414142646619700DE6F91 /* CAGroupAnimationViewController.m */,
+				81741416264667DB00DE6F91 /* CATransitionViewController.h */,
+				81741417264667DB00DE6F91 /* CATransitionViewController.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8174140C2646370900DE6F91 /* CABasicAnimationViewController.xib in Resources */,
 				817413DB2646342E00DE6F91 /* LaunchScreen.storyboard in Resources */,
+				81741404264634F400DE6F91 /* ExampleViewController.xib in Resources */,
 				817413D82646342E00DE6F91 /* Assets.xcassets in Resources */,
-				817413D62646342C00DE6F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817413D32646342C00DE6F91 /* ViewController.m in Sources */,
+				8174140B2646370900DE6F91 /* CABasicAnimationViewController.m in Sources */,
+				817414152646619700DE6F91 /* CAGroupAnimationViewController.m in Sources */,
+				81741403264634F400DE6F91 /* ExampleViewController.m in Sources */,
 				817413CD2646342C00DE6F91 /* AppDelegate.m in Sources */,
 				817413DE2646342E00DE6F91 /* main.m in Sources */,
-				817413D02646342C00DE6F91 /* SceneDelegate.m in Sources */,
+				81741418264667DB00DE6F91 /* CATransitionViewController.m in Sources */,
+				8174141226465FDB00DE6F91 /* CAKeyframeAnimation2ViewController.m in Sources */,
+				8174140F26465CF700DE6F91 /* CAKeyframeAnimation1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		817413D42646342C00DE6F91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				817413D52646342C00DE6F91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		817413D92646342E00DE6F91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
