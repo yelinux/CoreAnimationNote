@@ -11,6 +11,7 @@
 #import "CAKeyframeAnimation2ViewController.h"
 #import "CAGroupAnimationViewController.h"
 #import "CATransitionViewController.h"
+#import "CGAffineTransformViewController.h"
 
 @interface ExampleViewController ()
 
@@ -58,6 +59,12 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+//CGAffineTransform
+- (IBAction)click6:(id)sender {
+    CGAffineTransformViewController *vc = [[CGAffineTransformViewController alloc] init];
+    vc.title = @"CGAffineTransform";
+    [self.navigationController pushViewController:vc animated:YES];
+}
 /*
 #pragma mark - Navigation
 

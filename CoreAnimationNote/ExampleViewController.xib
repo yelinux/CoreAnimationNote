@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9y6-dU-IdK">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-qZ-TJK">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -72,6 +72,16 @@
                                     <state key="normal" title="过渡动画CATransition"/>
                                     <connections>
                                         <action selector="click5:" destination="-1" eventType="touchUpInside" id="wCF-Sz-ior"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhn-D6-doV">
+                                    <rect key="frame" x="0.0" y="250" width="414" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="6pm-84-cvt"/>
+                                    </constraints>
+                                    <state key="normal" title="CGAffineTransform"/>
+                                    <connections>
+                                        <action selector="click6:" destination="-1" eventType="touchUpInside" id="5Aa-Pc-5IM"/>
                                     </connections>
                                 </button>
                             </subviews>
