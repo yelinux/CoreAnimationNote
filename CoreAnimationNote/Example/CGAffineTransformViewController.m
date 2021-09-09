@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *sliderTy;
 @property (weak, nonatomic) IBOutlet UILabel *lbDesc;
 
+@property (strong, nonatomic) UIView *viewTest;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *lb;
 
@@ -36,6 +38,14 @@
     [self.sliderB addTarget:self action:@selector(sliderValueChanged:forEvent:) forControlEvents:UIControlEventValueChanged];
     [self.sliderD addTarget:self action:@selector(sliderValueChanged:forEvent:) forControlEvents:UIControlEventValueChanged];
     [self.sliderTy addTarget:self action:@selector(sliderValueChanged:forEvent:) forControlEvents:UIControlEventValueChanged];
+
+    //position与anchorPoint的实验
+    [self.view addSubview:self.viewTest];
+    self.viewTest.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - 100) / 2, 300, 100, 100);
+    CGPoint position = self.viewTest.layer.position;
+    position.x += 100 / 2;
+    self.viewTest.layer.position = position;
+    self.viewTest.layer.anchorPoint = CGPointMake(1, 0);
     
     [self sliderValueChanged:nil forEvent:nil];
 }
@@ -50,11 +60,15 @@
     self.lbDesc.text = [NSString stringWithFormat:@"x' = %fx + %fy + %f\ny' = %fx + %fy + %f", a, c, tx, b, d, ty];
     
     self.lb.layer.affineTransform = CGAffineTransformMake(a, b, c, d, tx, ty);
+    self.viewTest.layer.affineTransform = self.lb.layer.affineTransform;
+    
+    NSLog(@"%@", NSStringFromCGRect(self.lb.frame));
 }
 
 -(void)tapClick: (UITapGestureRecognizer*)sender{
     [UIView animateWithDuration:0.25 animations:^{
         self.lb.layer.affineTransform = CGAffineTransformIdentity;
+        self.viewTest.layer.affineTransform = self.lb.layer.affineTransform;
 
         self.sliderA.value = self.lb.layer.affineTransform.a;
         self.sliderC.value = self.lb.layer.affineTransform.c;
@@ -73,6 +87,18 @@
 //    [UIView animateWithDuration:0.2 animations:^{
 //        self.lb.layer.affineTransform = CGAffineTransformIdentity;
 //    }];
+}
+
+-(UIView *)viewTest{
+    if (_viewTest == nil) {
+        UILabel *viewTest = [[UILabel alloc] init];
+        viewTest.backgroundColor = UIColor.blueColor;
+        viewTest.textColor = UIColor.whiteColor;
+        viewTest.numberOfLines = 0;
+        viewTest.text = @"fdjsalfjdslfjsddfjlsdjflewjfljewofjewofjlewajflewjflejsfljwefjewoif";
+        _viewTest = viewTest;
+    }
+    return _viewTest;
 }
 
 /*

@@ -12,6 +12,7 @@
 #import "CAGroupAnimationViewController.h"
 #import "CATransitionViewController.h"
 #import "CGAffineTransformViewController.h"
+#import "CATransform3DViewController.h"
 
 @interface ExampleViewController ()
 
@@ -63,6 +64,13 @@
 - (IBAction)click6:(id)sender {
     CGAffineTransformViewController *vc = [[CGAffineTransformViewController alloc] init];
     vc.title = @"CGAffineTransform";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+//CATransform3D
+- (IBAction)click7:(id)sender {
+    CATransform3DViewController *vc = [[CATransform3DViewController alloc] init];
+    vc.title = @"CATransform3DViewController";
     [self.navigationController pushViewController:vc animated:YES];
 }
 /*

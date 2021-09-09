@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		814411E826E6F4E200DBB1FF /* CGAffineTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814411E626E6F4E200DBB1FF /* CGAffineTransformViewController.m */; };
 		814411E926E6F4E200DBB1FF /* CGAffineTransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814411E726E6F4E200DBB1FF /* CGAffineTransformViewController.xib */; };
+		814411F026E742D800DBB1FF /* CATransform3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814411EE26E742D800DBB1FF /* CATransform3DViewController.m */; };
+		814411F126E742D800DBB1FF /* CATransform3DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814411EF26E742D800DBB1FF /* CATransform3DViewController.xib */; };
 		817413CD2646342C00DE6F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 817413CC2646342C00DE6F91 /* AppDelegate.m */; };
 		817413D82646342E00DE6F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817413D72646342E00DE6F91 /* Assets.xcassets */; };
 		817413DB2646342E00DE6F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817413D92646342E00DE6F91 /* LaunchScreen.storyboard */; };
@@ -46,6 +48,9 @@
 		814411E526E6F4E200DBB1FF /* CGAffineTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformViewController.h; sourceTree = "<group>"; };
 		814411E626E6F4E200DBB1FF /* CGAffineTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformViewController.m; sourceTree = "<group>"; };
 		814411E726E6F4E200DBB1FF /* CGAffineTransformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGAffineTransformViewController.xib; sourceTree = "<group>"; };
+		814411ED26E742D800DBB1FF /* CATransform3DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransform3DViewController.h; sourceTree = "<group>"; };
+		814411EE26E742D800DBB1FF /* CATransform3DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransform3DViewController.m; sourceTree = "<group>"; };
+		814411EF26E742D800DBB1FF /* CATransform3DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CATransform3DViewController.xib; sourceTree = "<group>"; };
 		817413C82646342C00DE6F91 /* CoreAnimationNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817413CB2646342C00DE6F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		817413CC2646342C00DE6F91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -172,6 +177,9 @@
 				814411E526E6F4E200DBB1FF /* CGAffineTransformViewController.h */,
 				814411E626E6F4E200DBB1FF /* CGAffineTransformViewController.m */,
 				814411E726E6F4E200DBB1FF /* CGAffineTransformViewController.xib */,
+				814411ED26E742D800DBB1FF /* CATransform3DViewController.h */,
+				814411EE26E742D800DBB1FF /* CATransform3DViewController.m */,
+				814411EF26E742D800DBB1FF /* CATransform3DViewController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814411F126E742D800DBB1FF /* CATransform3DViewController.xib in Resources */,
 				8174140C2646370900DE6F91 /* CABasicAnimationViewController.xib in Resources */,
 				814411E926E6F4E200DBB1FF /* CGAffineTransformViewController.xib in Resources */,
 				817413DB2646342E00DE6F91 /* LaunchScreen.storyboard in Resources */,
@@ -309,6 +318,7 @@
 			files = (
 				8174140B2646370900DE6F91 /* CABasicAnimationViewController.m in Sources */,
 				817414152646619700DE6F91 /* CAGroupAnimationViewController.m in Sources */,
+				814411F026E742D800DBB1FF /* CATransform3DViewController.m in Sources */,
 				81741403264634F400DE6F91 /* ExampleViewController.m in Sources */,
 				814411E826E6F4E200DBB1FF /* CGAffineTransformViewController.m in Sources */,
 				817413CD2646342C00DE6F91 /* AppDelegate.m in Sources */,

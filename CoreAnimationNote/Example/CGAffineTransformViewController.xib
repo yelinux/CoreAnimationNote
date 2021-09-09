@@ -149,13 +149,20 @@ Label Label Label
                         </label>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCu-EB-WMv">
+                    <rect key="frame" x="94.5" y="422.5" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="il4-GV-Kue" firstAttribute="leading" secondItem="vCu-EB-WMv" secondAttribute="trailing" id="1WS-BH-OLZ"/>
                 <constraint firstItem="UaQ-e5-wFY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2NE-ex-icd"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UaQ-e5-wFY" secondAttribute="trailing" id="Is1-FA-gXf"/>
                 <constraint firstItem="il4-GV-Kue" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="Nye-4K-3Iq"/>
+                <constraint firstItem="il4-GV-Kue" firstAttribute="top" secondItem="vCu-EB-WMv" secondAttribute="top" id="QiS-Pr-rTs"/>
                 <constraint firstItem="il4-GV-Kue" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="SAJ-sY-uMd"/>
                 <constraint firstItem="UaQ-e5-wFY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="m36-iX-1xC"/>
             </constraints>
